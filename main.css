@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    position: relative;
+    
+}
+.boy{
+    width: 20px;
+    height: 50px;
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    
+    
+
+}
+.jump{
+    animation: boy 0.5s;
+}
+@keyframes boy {
+    0%{
+        bottom: 0;
+    }
+    30%{
+        bottom: 50px;
+    }
+    70%{
+        bottom: 50px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+.block{
+    width: 20px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: block ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes block{
+   from{
+    right: 0;
+   }
+   to{
+    right: 500px;
+   }
+}
